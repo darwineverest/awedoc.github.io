@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Background Template</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Awesome Doc Web V.1.0</h1>
+    <p>Creator: Tubbo. Admins: GojoFan22, MetallicaMan and TunaFish.</p>
+    <p>Youtube Links:</p>
+    <ul>
+        <li><a href="https://inv.n8pjl.ca/feed/popular">FakeWeb(Reccomended)</a></li>
+        <li><a href="https://ytunblocked.netlify.app/">Link Unblocker</a></li>
+        <li><a href="#">WIP</a></li>
+    </ul>
+    
+        <p>Game Links:</p>
+    <ul>
+        <li><a href="https://teddblue.github.io/gamebois/">GameBoy Emulator </a></li>
+        <li><a href="https://mac-web.github.io/macvg/">Normal Archive</a></li>
+        <li><a href="https://www.coolmathgames.com/">Coolmathgames</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
