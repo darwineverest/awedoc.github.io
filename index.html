@@ -41,7 +41,10 @@
             border: none; /* Remove border around the iframe */
         }    
     </style>
-    <script>
+
+</head>
+<body>
+ <script>
         window.onload = function() {
             var iframe = document.getElementById('myIframe');
             var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
@@ -54,12 +57,22 @@
             }
         };
     </script>
-</head>
-<body>
+<script>
+        function toggleFullscreen() {
+            var iframe = document.getElementById('myIframe');
+            if (!document.fullscreenElement) {
+                iframe.requestFullscreen();
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+    </script>
+    
 <div class="container">
     <h1>Unblocked Browser <br> <b>(Restrictions Apply)</b></h1>
-    
-    <!-- Embedding a YouTube video -->
+    <button onclick="toggleFullscreen()">Toggle Fullscreen</button>
     <iframe id="myIframe" src="https://bing.com" width="900" height="650"></iframe>
     <p>This method of getting wepbages onto another results in some not <br> being able to load. This I cant change or do anything about.</p></div>
 <div class="container">
