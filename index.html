@@ -54,19 +54,6 @@
 
 </head>
 <body>
- <script>
-        window.onload = function() {
-            var iframe = document.getElementById('myIframe');
-            var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-            var links = iframeDocument.getElementsByTagName('a');
-            for (var i = 0; i < links.length; i++) {
-                links[i].addEventListener('click', function(event) {
-                    event.preventDefault();
-                    iframe.src = this.href;
-                });
-            }
-        };
-    </script>
 <script>
         function toggleFullscreen() {
             var iframe = document.getElementById('myIframe');
@@ -78,19 +65,6 @@
                 }
             }
         }
-    </script>
-     <script>
-        window.onload = function() {
-            var iframe = document.getElementById('myIframe2');
-            var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-            var links = iframeDocument.getElementsByTagName('a');
-            for (var i = 0; i < links.length; i++) {
-                links[i].addEventListener('click', function(event) {
-                    event.preventDefault();
-                    iframe.src = this.href;
-                });
-            }
-        };
     </script>
 <script>
         function toggleFullscreen2() {
@@ -113,7 +87,7 @@
     
     <button class="fullscreen-button" onclick="toggleFullscreen2()">Toggle Fullscreen</button>
     
-    <iframe id="myIframe2" src="https://ask.com" width="900" height="650"></iframe>
+    <iframe id="myIframe2" src="https://searx.thegpm.org/" width="900" height="650"></iframe>
     
     <p>This method of getting wepbages onto another results in some not <br> being able to load. This I cant change or do anything about.</p></div>
 <div class="container">
