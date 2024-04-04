@@ -39,7 +39,17 @@
             width: 100%; /* Make iframe take full width of the container */
             height: 500px; /* Set the height of the iframe (you can adjust this as needed) */
             border: none; /* Remove border around the iframe */
-        }    
+        }
+        .fullscreen-button {
+            background-color: silver; /* Background color */
+            border: none; /* Remove border */
+            border-radius: 10px; /* Smooth edges */
+            padding: 10px 20px; /* Add padding */
+            font-size: 16px; /* Font size */
+            color: white; /* Text color */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
     </style>
 
 </head>
@@ -69,11 +79,42 @@
             }
         }
     </script>
-    
+     <script>
+        window.onload = function() {
+            var iframe = document.getElementById('myIframe2');
+            var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+            var links = iframeDocument.getElementsByTagName('a');
+            for (var i = 0; i < links.length; i++) {
+                links[i].addEventListener('click', function(event) {
+                    event.preventDefault();
+                    iframe.src = this.href;
+                });
+            }
+        };
+    </script>
+<script>
+        function toggleFullscreen() {
+            var iframe = document.getElementById('myIframe2');
+            if (!document.fullscreenElement) {
+                iframe.requestFullscreen();
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+    </script>    
 <div class="container">
     <h1>Unblocked Browser <br> <b>(Restrictions Apply)</b></h1>
-    <button onclick="toggleFullscreen()">Toggle Fullscreen</button>
+    
+    <button class="fullscreen-button" onclick="toggleFullscreen()">Toggle Fullscreen</button>
+    
     <iframe id="myIframe" src="https://bing.com" width="900" height="650"></iframe>
+    
+    <button class="fullscreen-button" onclick="toggleFullscreen()">Toggle Fullscreen</button>
+    
+    <iframe id="myIframe" src="https://duckduckgo.com/" width="900" height="650"></iframe>
+    
     <p>This method of getting wepbages onto another results in some not <br> being able to load. This I cant change or do anything about.</p></div>
 <div class="container">
     <h1>Awesome Doc Web V.1.0</h1>
