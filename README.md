@@ -1,1 +1,1 @@
-some stuff fr
+Site aimed to unblock games n stuff for school
