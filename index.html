@@ -38,7 +38,7 @@
         }
          iframe {
             width: 100%; /* Make iframe take full width of the container */
-            height: 500px; /* Set the height of the iframe (you can adjust this as needed) */
+            min-height: calc(100vh - 40px); /* Set the height of the iframe (you can adjust this as needed) */
             border: none; /* Remove border around the iframe */
         }
         .fullscreen-button {
@@ -94,9 +94,9 @@
 <div class="container">
     <h1>Unblocked Browser <br> <b>(Restrictions Apply)</b></h1>
     
-    <button class="fullscreen-button" onclick="toggleFullscreen()">Toggle Fullscreen</button>
-    
     <iframe id="myIframe" src="https://bing.com" width="900" height="650"></iframe>
+    
+    <button class="fullscreen-button" onclick="toggleFullscreen()">Toggle Fullscreen</button>
     
     <button class="fullscreen-button" onclick="toggleFullscreen2()">Toggle Fullscreen</button>
     
