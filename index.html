@@ -8,7 +8,8 @@
     <link rel="icon" type="image/jpeg" href="https://asset.brandfetch.io/id6_LJmclH/idTgCT9G-6.jpeg">    
     <style>
         body {
-             background-image: url('https://www.shutterstock.com/image-illustration/3d-rendering-abstract-connection-shine-600nw-598612337.jpg');  
+            padding-top: 20px;
+            background-image: url('https://www.shutterstock.com/image-illustration/3d-rendering-abstract-connection-shine-600nw-598612337.jpg');  
             background-size: cover; 
             background-position: center; 
             color: #fff;
@@ -103,11 +104,11 @@
     
     <p>This method of getting wepbages onto another results in some not <br> being able to load. This I cant change or do anything about.</p></div>
 <div class="container">
-    <h1>Awesome Doc Web V.2.0</h1>
+    <h1>Awesome Doc Web V.2.5</h1>
     <p>Creator: Tubbo. Admins: GojoFan22, MetallicaMan and TunaFish.<br>Want stuff added or any questions?<br> Email tubbonior2071@gmail.com</p>
     <h2>Youtube Links:</h2>
-    <input type="text" id="urlInput" class="url-input" placeholder="Enter URL">
-    <button class="fullscreen-button" onclick="changeURL()">Go</button>    
+    <input type="text" id="urlInput" class="url-input" placeholder="Enter URL with 'https://'">
+    <button class="fullscreen-button" onclick="openGame()">Go</button>    
     
 </div>
 
@@ -120,7 +121,7 @@
 
   gtag('config', 'G-Z4WQRDXB4M');
 </script>
-    
+  
 <script>
     document.addEventListener("keydown", function(event) {
         if (event.key === "q") {
@@ -137,6 +138,19 @@
         }
     };
 </script>
-</body>
+
+<script>
+function openGame() {
+    var win = window.open()
+    var urlInput = document.getElementById('urlInput');
+    var newUrl = urlInput.value;
+    var iframe = win.document.createElement('iframe')
+    iframe.style.width = "100%";
+    iframe.style.height = "100%";
+    iframe.style.border = "none";
+    iframe.src = newUrl;
+    win.document.body.appendChild(iframe)
+}
+</script></body>
     
 </html>
