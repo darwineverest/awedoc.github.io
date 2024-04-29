@@ -50,12 +50,24 @@
             cursor: pointer; /* Change cursor to pointer on hover */
             transition: background-color 0.3s ease; /* Smooth transition for background color */
         }
-    </style>
+        .url-input {
+            width: 400px; /* Set width */
+            padding: 8px; /* Add padding */
+            font-size: 14px; /* Font size */
+            margin-right: 10px; /* Add right margin */
+        }    </style>
 
 </head>
 <body>
 <script>
-        function toggleFullscreen() {
+    function changeURL() {
+            var urlInput = document.getElementById('urlInput');
+            var newUrl = urlInput.value;
+            var iframe = document.getElementById('myIframe');
+            iframe.src = newUrl;
+        } 
+    
+    function toggleFullscreen() {
             var iframe = document.getElementById('myIframe');
             if (!document.fullscreenElement) {
                 iframe.requestFullscreen();
@@ -94,18 +106,8 @@
     <h1>Awesome Doc Web V.2.0</h1>
     <p>Creator: Tubbo. Admins: GojoFan22, MetallicaMan and TunaFish.<br>Want stuff added or any questions?<br> Email tubbonior2071@gmail.com</p>
     <h2>Youtube Links:</h2>
+    <input type="text" id="urlInput" class="url-input" placeholder="Enter URL">
     
-    <p><a href="https://inv.n8pjl.ca/feed/popular">FakeWeb(Reccomended)</a></p>
-    <p><a href="https://ytunblocked.netlify.app/">Link Unblocker</a></p>
-    <p><a href="#">WIP</a></p>
-  
-    
-    <h2>Game Links:</h2>
-    
-    <p><a href="https://teddblue.github.io/gamebois/">GameBoy Emulator </a></p>
-    <p><a href="https://mac-web.github.io/macvg/">Normal Archive</a></p>
-    <p><a href="https://www.coolmathgames.com/">Coolmathgames</a></p>
-
 </div>
 
 <!-- Google tag (gtag.js) -->
