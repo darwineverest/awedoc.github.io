@@ -107,7 +107,7 @@
     <h1>Awesome Doc Web V.2.5</h1>
     <p>Creator: Tubbo. Admins: GojoFan22, MetallicaMan and TunaFish.<br>Want stuff added or any questions?<br> Email tubbonior2071@gmail.com</p>
     <h2>Web Navigator Cloaked(BETA)</h2>
-    <input type="text" id="urlInput" class="url-input" placeholder="     Enter URL with 'https://'">
+    <p>(Disclaimer!) Is blocked on some chromebooks, if this happens, womp womp.</p>
     <button class="fullscreen-button" onclick="openGame()">Go</button>    
     
 </div>
@@ -132,7 +132,7 @@
 <script>
     window.onload = function() {
         var password = prompt("Please enter the password:");
-        if (password !== "4bigdudes") {
+        if (password !== "skibidi") {
             alert("Incorrect password! Access denied.");
             window.location.href = "about:blank"; // Redirect to a blank page
         }
@@ -148,7 +148,7 @@ function openGame() {
     iframe.style.width = "100%";
     iframe.style.height = "100%";
     iframe.style.border = "none";
-    iframe.src = newUrl;
+    iframe.src = "https://velocity.radon.games/";
     win.document.body.appendChild(iframe)
 }
 </script></body>
