@@ -142,15 +142,14 @@
 <script>
 function openGame() {
     var win = window.open()
-    var urlInput = document.getElementById('urlInput');
-    var newUrl = urlInput.value;
     var iframe = win.document.createElement('iframe')
     iframe.style.width = "100%";
     iframe.style.height = "100%";
     iframe.style.border = "none";
-    iframe.src = "https://velocity.radon.games/";
+    iframe.src = "https://velocity.radon.games/"
     win.document.body.appendChild(iframe)
 }
-</script></body>
+</script>
+</body>
     
 </html>
