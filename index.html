@@ -80,6 +80,16 @@
                 }
             }
         }
+        function toggleFullscreen2() {
+            var iframe = document.getElementById('myIframe2');
+            if (!document.fullscreenElement) {
+                iframe.requestFullscreen();
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
     </script>
  
 <div class="container">    
@@ -87,7 +97,8 @@
     <button class="button" onclick="toggleFullscreen()">Full</button>    
 </div>
 <div class="container">
-    <button class="button" onclick="openGame()">Sodium</button>
+    <iframe id="myIframe2" src="https://sodium-5h8.pages.dev/"></iframe>
+    <button class="button" onclick="toggleFullscreen2">Sodium</button>
 
 </div>
 
