@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<meta http-equiv='cache-control' content='no-cache'> 
-<meta http-equiv='expires' content='0'> 
-<meta http-equiv='pragma' content='no-cache'><html lang="en">
 <head>
     
     <meta charset="UTF-8">
@@ -73,13 +70,6 @@
 </head>
 <body>
 <script>
-    function changeURL() {
-            var urlInput = document.getElementById('urlInput');
-            var newUrl = urlInput.value;
-            var iframe = document.getElementById('myIframe');
-            iframe.src = newUrl;
-        } 
-    
     function toggleFullscreen() {
             var iframe = document.getElementById('myIframe');
             if (!document.fullscreenElement) {
@@ -91,18 +81,7 @@
             }
         }
     </script>
-<script>
-        function toggleFullscreen2() {
-            var iframe = document.getElementById('myIframe2');
-            if (!document.fullscreenElement) {
-                iframe.requestFullscreen();
-            } else {
-                if (document.exitFullscreen) {
-                    document.exitFullscreen();
-                }
-            }
-        }
-    </script>    
+ 
 <div class="container">    
     <iframe id="myIframe" src="https://www.bing.com"></iframe>    
     <button class="button" onclick="toggleFullscreen()">Full</button>    
