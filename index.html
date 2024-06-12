@@ -90,6 +90,16 @@
                 }
             }
         }
+        function toggleFullscreen3() {
+            var iframe = document.getElementById('myIframe3');
+            if (!document.fullscreenElement) {
+                iframe.requestFullscreen();
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
     </script>
  
 <div class="container">    
@@ -101,6 +111,13 @@
     <button class="button" onclick="toggleFullscreen2()">Full</button>
 
 </div>
+
+<div class="container">
+    <iframe id="myIframe3" src="https://sodium-5h8.pages.dev/"></iframe>
+    <button class="button" onclick="toggleFullscreen3()">Full</button>
+
+</div>
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z4WQRDXB4M"></script>
